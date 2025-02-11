@@ -62,7 +62,7 @@ clearButton.addEventListener("click", () => {
 });
 
 function loadData() {
-  fetch("/travelRecommendation/travel_recommendation_api.json")
+  fetch("/travel-recommendations/travel_recommendation_api.json")
     .then((response) => response.json())
     .then((json) => (data = json));
 }

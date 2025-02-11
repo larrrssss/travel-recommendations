@@ -4,69 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - TravelAbroad</title>
-    <link rel="stylesheet" href="/travelRecommendation/styles.css" />
+    <link rel="stylesheet" href="/travel-recommendations/styles.css" />
   </head>
   <body>
     <section class="hero">
       <header>
-        <a class="website-name" href="/travelRecommendation">TravelAbroad</a>
+        <a class="website-name" href="/travel-recommendations">TravelAbroad</a>
 
         <nav>
           <ul>
             <li>
-              <a href="/travelRecommendation">Home</a>
+              <a href="/travel-recommendations">Home</a>
             </li>
             <li>
-              <a href="/travelRecommendation/about_us.html">About Us</a>
+              <a href="/travel-recommendations/about_us.html">About Us</a>
             </li>
             <li>
-              <a href="/travelRecommendation/contact_us.html">Contact Us</a>
+              <a href="/travel-recommendations/contact_us.html">Contact Us</a>
             </li>
           </ul>
         </nav>
 
-        <div
-          class="search-container"
-          style="opacity: 0; pointer-events: none; visibility: hidden"
-        >
+        <div class="search-container">
           <input
             type="search"
             name="search"
             id="search"
             placeholder="Enter a destination or keyword"
           />
-          <button>Search</button>
-          <button>Clear</button>
+          <button id="search-btn">Search</button>
+          <button id="clear-btn">Clear</button>
         </div>
       </header>
       <div class="hero-inner">
         <div class="hero-title">
-          <h1>About Us</h1>
+          <h1>Discover Your Next Adventure with TravelAbroad</h1>
           <p class="sub-heading">
-            At TravelAbroad, we believe that travel should be seamless,
-            exciting, and tailored to you. Our mission is to help explorers of
-            all kinds—solo travelers, adventure seekers, and culture
-            enthusiasts—find their perfect destination with ease.
+            Find the perfect destination tailored to your style.
           </p>
 
-          <h2>Our Team</h2>
-          <div class="team-list">
-            <div class="person">
-              <p class="name">John Doe</p>
-              <p class="description">John is responsible for...</p>
-              <p class="role">CEO</p>
-            </div>
-            <div class="person">
-              <p class="name">Celina Thomas</p>
-              <p class="description">Celina Thomas is responsible for...</p>
-              <p class="role">Team Lead</p>
-            </div>
-            <div class="person">
-              <p class="name">Mike Tysen</p>
-              <p class="description">Mike Tysen is responsible for...</p>
-              <p class="role">Delivery Head</p>
-            </div>
-          </div>
+          <div id="recommendations" class="recommendation-container"></div>
 
           <ul class="socials">
             <li>
@@ -118,5 +95,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/travel-recommendations/travel_recommendation.js"></script>
   </body>
 </html>
