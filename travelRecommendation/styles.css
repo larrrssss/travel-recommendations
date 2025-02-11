@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./hero-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-inner {
+  display: flex;
+  padding: 15vh 5vw;
+}
+
+.hero-title {
+  width: 100%;
+  max-width: 700px;
+}
+
+.hero-title h2 {
+  color: white;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 12px;
+}
+
+.team-list .person {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  color: white;
+}
+
+.person .name {
+  font-weight: medium;
+  font-size: 18px;
+}
+
+.person .description {
+  font-size: 14px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.person .role {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.socials {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.socials li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-title .sub-heading {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 18px;
+}
+
+.hero-title h1 {
+  font-weight: bold;
+  font-size: 46px;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 30px;
+  max-width: 480px;
+  width: 100%;
+}
+
+.contact-form .group {
+  margin-bottom: 16px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form button {
+  padding: 8px;
+  color: white;
+  background: #059669;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+.recommendation-container {
+  margin: 40px 0;
+}
+
+.city {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+  max-width: 480px;
+  width: 100%;
+}
+
+.city img {
+  width: 100%;
+}
+
+.city h3 {
+  margin: 8px 0 6px 0;
+  font-size: 18px;
+}
+
+.city p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 8px;
+}
+
+.city button {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  margin: 0 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background: #059669;
+}
+
+.city h3,
+.city p {
+  padding: 0 12px;
+}
+
+header {
+  width: 100%;
+  padding: 20px 12px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .website-name {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header nav ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: medium;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  background: white;
+  padding: 0 10px;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.search-container input {
+  max-width: 210px;
+  border: none;
+  padding: 18px 8px;
+}
+
+.search-container button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background: #059669;
+}
+
+.search-container button:hover {
+  opacity: 0.9;
+}
